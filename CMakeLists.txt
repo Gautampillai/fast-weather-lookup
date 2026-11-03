@@ -7,4 +7,5 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
 
-add_executable(fast_weather_lookup main.cpp Trie.cpp)
+add_executable(fast_weather_lookup main.cpp Trie.cpp
+        CityIndex.h)
