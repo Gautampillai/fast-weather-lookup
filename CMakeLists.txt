@@ -8,4 +8,4 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 add_executable(fast_weather_lookup main.cpp Trie.cpp
-        CityIndex.h)
+        CityIndex.h HashMapIndex.h)
