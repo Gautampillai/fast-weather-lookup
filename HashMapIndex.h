@@ -9,6 +9,7 @@
 #include <algorithm>
 
 // Hash table with separate chaining and capacity doubles when LF > 0.75.
+// Helps compare with the two data structures
 class HashMapIndex : public CityIndex {
     struct Node {
         string key;
