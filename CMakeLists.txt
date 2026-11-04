@@ -9,4 +9,4 @@ endif()
 
 add_executable(fast_weather_lookup main.cpp Trie.cpp
         CityIndex.h HashMapIndex.h TrieIndex.h
-        DataLoader.h DataLoader.cpp)
+        DataLoader.h DataLoader.cpp Benchmark.h)
