@@ -16,3 +16,5 @@ add_executable(core_tests tests/core_tests.cpp CityIndex.h
 add_executable(weather_cli weather_cli.cpp DataLoader.cpp
                Trie.cpp CityIndex.h HashMapIndex.h
                TrieIndex.h Dataloader.h Benchmark.h)
+
+target_link_options(weather_cli PRIVATE -static)
