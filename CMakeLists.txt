@@ -10,5 +10,9 @@ endif()
 add_executable(fast_weather_lookup main.cpp Trie.cpp)
 
 add_executable(core_tests tests/core_tests.cpp CityIndex.h
-                HashMapIndex.h TrieIndex.h DataLoader.h
-                DataLoader.cpp Benchmark.h Trie.cpp)
+               HashMapIndex.h TrieIndex.h DataLoader.h
+               DataLoader.cpp Benchmark.h Trie.cpp)
+
+add_executable(weather_cli weather_cli.cpp DataLoader.cpp
+               Trie.cpp CityIndex.h HashMapIndex.h
+               TrieIndex.h Dataloader.h Benchmark.h)
